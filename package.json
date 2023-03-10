@@ -1,0 +1,25 @@
+{
+  "name": "evangadi-forum",
+  "version": "1.0.0",
+  "description": "evangadi forum",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"nodemon server.js\" \"npm run client\"",
+    "client": "npm start --prefix client",
+    "start": "node server.js"
+  },
+  "author": "Destaw",
+  "license": "ISC",
+  "dependencies": {
+    "@mysql/xdevapi": "8.0.32",
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^7.6.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.21"
+  }
+}
